@@ -1,12 +1,20 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Raleway', sans-serif;
     color: #434455;
+    margin: 0 auto;
 
+}
+
+h1,h2,h3,h4,h5,h6,p,{
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 ul {
     list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
 }
 
 a {
@@ -15,10 +23,23 @@ a {
 
 /* Header */
 
+
+.header-container{
+        display: flex;
+        width: 1440px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+}
+
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    background-color: rgba(231, 233, 252, 1);
 }
+
+
+
 
 .header-name-iris {
     font-weight: 700;
@@ -29,7 +50,12 @@ a {
     color: #2E2F42;
 }
 
-.header-navigation {}
+.header-navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-right: 156px;
+}
 
 .header-name {
     font-size: 18px;
@@ -38,9 +64,17 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-left: 156px;
 }
 
-.header-ul {}
+.header-ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        padding: 0;
+        margin: 0;
+        margin-left: 76px;
+}
 
 .header-menu-link {
     color: #2E2F42;
@@ -58,11 +92,24 @@ a {
     color: #404bbf;
 }
 
+
+.contact-info{
+    display: flex;
+        gap: 40px;
+       
+}
+
+
+
 .class-address {
     font-style: normal
 }
 
-.address-ul {}
+.address-ul {
+    display: flex; 
+    margin-left: 332px;
+    gap: 40px;
+}
 
 .address-item {}
 
@@ -86,18 +133,21 @@ a {
 }
 
 .section-one-name {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     text-align: center;
-    max-width: 494px;
+    max-width: 496px;
     margin:0 auto;
     margin-bottom: 48px;
 }
 
+
+
 .section-one-button {
+    padding: 16px 32px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -106,6 +156,8 @@ a {
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
     cursor: pointer;
+    border-radius: 4px;
+    border: none;
 }
 
 
@@ -122,10 +174,16 @@ a {
 }
 
 
-.section-one-continuation-container {
-    padding: 120px;
-    padding-top: 24px;
+.section-one-continuation{
     padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+
+.section-one-continuation-container {
+    width: 1128px;
+    margin-left: 156px;
+  
 }
 
 .visually-hidden {
@@ -139,9 +197,15 @@ a {
     overflow: hidden;
 }
 
-.section-one-ul {}
+.section-one-ul {
+    display: flex;
+    gap: 24px;
+    margin-left: 156px;
+}
 
-.section-one-item {}
+.section-one-item {
+  
+}
 
 .section-one-letters {
     font-size: 20px;
@@ -149,6 +213,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: rgba(46, 47, 66, 1);
+    margin-bottom: 8px;
 }
 
 .section-one-comment {
@@ -157,6 +222,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: rgba(67, 68, 85, 1);
+    max-width: 264px;
 }
 
 
@@ -165,8 +231,17 @@ a {
 /*Для Our-team*/
 
  .section-two{
-    background: rgba(244, 244, 253, 1);
     padding-bottom: 120px;
+    padding-top: 120px;
+    background: rgba(244, 244, 253, 1);
+}
+
+.two-container{
+    
+    max-width: 1440px;  
+     margin: 0 auto;  
+    padding:  24px;
+    
 }
 
 
@@ -178,23 +253,42 @@ a {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 72px;
-    margin-top: 120px;
     max-width: 162px;
     margin: 0 auto;
+    margin-bottom: 72px;
 }
 
-.two-two-container{
-}
 
 .section-two-ul {
-background-color: #FFFFFF
+    list-style: none;
+        /* Удаление маркеров списка */
+        padding: 0;
+        /* Удаление стандартных паддингов списка */
+        display: flex;
+        /* Использование flexbox для выравнивания элементов */
+        justify-content: center;
+        /* Центрирование элементов внутри flex контейнера */
+        flex-wrap: wrap;
+    
+    }
 
+
+
+.section-two-item {
+    margin: 24px;
+     width: 264px; 
 }
 
-.section-two-item {}
-
-.picture-one {}
+.picture-one {
+    max-width: 100%;
+        /* Максимальная ширина изображений, чтобы они были отзывчивыми */
+        height: auto;
+        /* Высота изображений будет автоматически рассчитана */
+        display: block;
+        /* Установка изображений как блочных элементов для правильного отображения */
+        margin-bottom: 32px;
+        /* Отступы снизу изображения */
+}
 
 .section-two-letters {
     font-size: 20px;
@@ -202,7 +296,6 @@ background-color: #FFFFFF
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    background-color: #FFFFFF
 }
 
 .section-two-comment {
@@ -216,25 +309,61 @@ background-color: #FFFFFF
 
 /*Для Our Portfolio*/
 
-.section-three {}
+.section-three {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    background-color:#FFFFFF
+}
+
+
+.container-our-portfolio{
+    max-width: 1128px;
+        margin: 0 auto;
+        padding: 24px;
+}
 
 .section-three-name {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    max-width: 218px;
+    min-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+
 }
 
 .section-three-ul {
+    list-style: none;
+        /* Удаление маркеров списка */
+        padding: 0;
+        /* Удаление стандартных паддингов списка */
+        display: flex;
+        /* Использование flexbox для выравнивания элементов */
+        justify-content: center;
+        /* Центрирование элементов внутри flex контейнера */
+        flex-wrap: wrap;
     background-color: #FFFFFF;
 }
 
-.section-three-item {}
+.section-three-item {
+        width: 360px;
+}
 
-.picture-two {}
+.picture-two {
+    max-width: 100%;
+        /* Максимальная ширина изображений, чтобы они были отзывчивыми */
+        height: auto;
+        /* Высота изображений будет автоматически рассчитана */
+        display: block;
+        /* Установка изображений как блочных элементов для правильного отображения */
+        margin-bottom:  32px; ;
+        /* Отступы снизу изображения */
+}
 
 .section-three-letters {
     font-size: 20px;
@@ -258,25 +387,46 @@ background-color: #FFFFFF
 
 .footer-the-end {
     background-color: rgba(46, 47, 66, 1);
+    /* Цвет фона футера */
+    /* Добавьте сюда другие стили, если нужно */
 }
 
-.footer-name {
+.footer-container {
+    max-width: 1440px;
+        margin: 0 auto;
+        /* Центрирование контейнера */
+        display: flex;
+        flex-direction: column;
+        /* Столбец для вертикального стека */
+        align-items: flex-start;
+        /* Выравнивание содержимого по левому краю */
+        justify-content: center;
+        /* Вертикальное центрирование */
+        height: 100%;
+        /* Задаем 100% высоты футера для вертикального центрирования */
+        padding-left: 40px;
+        /* Отступ слева */
+}
+
+.footer-name,
+.footer-iric {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5
+    color: #4d5ae5;
+    /* Цвет текста */
+    margin-bottom: 16px;
+    /* Убираем отступы, так как Flexbox будет использоваться для выравнивания */
+    text-decoration: none;
+    /* Убрать подчеркивание у ссылки */
 }
 
 .footer-iric {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: rgba(244, 244, 253, 1);
+    /* Цвет отличается от основного имени */
 }
 
 .footer-comment {
@@ -285,6 +435,10 @@ background-color: #FFFFFF
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: rgba(244, 244, 253, 1);
+    max-width: 600px;
+    /* Максимальная ширина текста для лучшего читаемости */
+        text-align: left;
+    margin: 0;
 }
 
 /*Ноги сайта finish*/
