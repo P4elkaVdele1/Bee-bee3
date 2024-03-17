@@ -22,28 +22,26 @@ a {
 }
 
 /* Header */
+
+
 .header {
-    border-bottom: 1px solid #e7e7e7;
-    /* Цвет и толщина границы снизу */
+    border-bottom: 1px solid #e7e7e7;/* Цвет и толщина границы снизу */
     display: flex;
-    justify-content: space-between;
-    /* Элементы равномерно распределены */
-    padding: 15px 0;
-    /* Верхний и нижний отступы */
+    justify-content: space-between;/* Элементы равномерно распределены */
+    padding: 15px 0;/* Верхний и нижний отступы */
 }
 
 .header-container {
     display: flex;
-    justify-content: center;
-    /* Горизонтальное центрирование содержимого */
-    align-items: center;
-    /* Вертикальное центрирование содержимого */
-    max-width: 1158px;
-    /* Максимальная ширина контейнера */
-    margin: 0 auto;
-    /* Автоматические отступы для центрирования по горизонтали */
-    padding: 15px;
-    /* Внутренние отступы */
+    justify-content: center;/* Горизонтальное центрирование содержимого */
+    align-items: center;/* Вертикальное центрирование содержимого */
+    max-width: 1158px;/* Максимальная ширина контейнера */
+    margin: 0 auto;/* Автоматические отступы для центрирования по горизонтали */
+    padding: 15px;/* Внутренние отступы */
+}
+
+.container{
+    padding: 0 15px;
 }
 
 .header-name-iris {
@@ -60,10 +58,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
-    /* Верхний и нижний отступы */
-    margin-right: 76px;
-    /* Правый внешний отступ */
+    padding: 24px 0;/* Верхний и нижний отступы */
+    margin-right: 76px;/* Правый внешний отступ */
 }
 
 .header-name {
@@ -73,16 +69,13 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    /* Цвет текста */
     margin-right: auto;
-    /* Автоматический правый отступ для выравнивания всех элементов к левому краю */
 }
 
 .header-ul {
     list-style: none;
     display: flex;
     gap: 40px;
-    /* Расстояние между элементами списка */
     padding: 0;
     margin: 0;
     margin-right: 76px;
@@ -107,23 +100,18 @@ a {
 
 .contact-info {
     display: flex;
-    gap: 40px;
-    /* Расстояние между элементами */
+    gap: 40px;/* Расстояние между элементами */
 }
 
 .class-address {
     font-style: normal;
     display: flex;
-    align-items: center;
-    /* Вертикальное центрирование содержимого */
+    align-items: center;/* Вертикальное центрирование содержимого */
 }
 
 .address-ul {
     display: flex;
-    margin-left: 332px;
-    /* Левый внешний отступ */
-    gap: 40px;
-    /* Расстояние между элементами списка */
+    gap: 40px;/* Расстояние между элементами списка */
 }
 
 .address-item {
