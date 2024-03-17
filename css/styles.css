@@ -22,26 +22,28 @@ a {
 }
 
 /* Header */
-
-
-
-
-
 .header {
-   border-bottom: 1px solid #e7e7e7;  /* Цвет и толщина границы */
-   display: flex;
-   justify-content: space-between;/* Распределение элементов с пространством между */
-   padding: 15px 0;
+    border-bottom: 1px solid #e7e7e7;
+    /* Цвет и толщина границы снизу */
+    display: flex;
+    justify-content: space-between;
+    /* Элементы равномерно распределены */
+    padding: 15px 0;
+    /* Верхний и нижний отступы */
 }
 
 .header-container {
     display: flex;
-    justify-content: center; /* Центрирует содержимое по горизонтали */
-    align-items: center; /* Центрирует содержимое по вертикали */
+    justify-content: center;
+    /* Горизонтальное центрирование содержимого */
+    align-items: center;
+    /* Вертикальное центрирование содержимого */
     max-width: 1158px;
-    margin: 0 auto; /* Автоматические отступы для центрирования */
-    padding: 15px; /* Внутренние отступы */
-    margin: 0 auto;  /* Внешние отступы */
+    /* Максимальная ширина контейнера */
+    margin: 0 auto;
+    /* Автоматические отступы для центрирования по горизонтали */
+    padding: 15px;
+    /* Внутренние отступы */
 }
 
 .header-name-iris {
@@ -51,15 +53,17 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
+    /* Цвет текста */
 }
 
 .header-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0 24px;
+    padding: 24px 0;
+    /* Верхний и нижний отступы */
     margin-right: 76px;
-
+    /* Правый внешний отступ */
 }
 
 .header-name {
@@ -69,58 +73,62 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: auto; 
+    /* Цвет текста */
+    margin-right: auto;
+    /* Автоматический правый отступ для выравнивания всех элементов к левому краю */
 }
 
 .header-ul {
-        list-style: none;
-        display: flex;
-        gap: 40px;
-        padding: 0;
-        margin: 0;
-        padding-top: 24px;
-        padding-bottom: 24px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    /* Расстояние между элементами списка */
+    padding: 0;
+    margin: 0;
+    margin-right: 76px;
+    /* Правый внешний отступ */
 }
 
 .header-menu-link {
     color: #2E2F42;
+    /* Цвет текста */
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-   padding: 24px;
+    padding: 24px;
+    /* Внутренний отступ */
 }
 
-.header-menu-link:hover {
-    color: #404bbf;
-}
-
+.header-menu-link:hover,
 .header-menu-link:focus {
     color: #404bbf;
+    /* Цвет текста при наведении или фокусе */
 }
 
-
-.contact-info{
+.contact-info {
     display: flex;
-        gap: 40px;    
+    gap: 40px;
+    /* Расстояние между элементами */
 }
-
-
 
 .class-address {
     font-style: normal;
     display: flex;
-        align-items: center;
+    align-items: center;
+    /* Вертикальное центрирование содержимого */
 }
 
 .address-ul {
-    display: flex; 
+    display: flex;
     margin-left: 332px;
+    /* Левый внешний отступ */
     gap: 40px;
+    /* Расстояние между элементами списка */
 }
 
 .address-item {
     margin-right: 24px;
+    /* Правый внешний отступ для каждого элемента списка */
 }
 
 .address-link {
@@ -130,6 +138,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434655;
+    /* Цвет текста */
 }
 
 
