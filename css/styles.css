@@ -25,17 +25,27 @@ a {
 
 
 .header-container{
-        display: flex;
-        width: 1440px;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
+            display: flex;
+            justify-content: center; /* Центрирует содержимое по горизонтали */
+            align-items: center; /* Центрирует содержимое по вертикали */
+            max-width: 1150px;/* Максимальная ширина контента */
+            margin: 0 auto;/* Автоматические отступы для центрирования */
+            padding: 15px;/* Внутренние отступы */
+            margin: 0 auto;/* Внешние отступы */
 }
 
+
+ .container{
+    width: 1158px;
+    padding: 0 15px 0 15px;
+ }
+
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    background-color: rgba(231, 233, 252, 1);
+   border-bottom: 1px solid #e7e7e7;  /* Цвет и толщина границы */
+   display: flex;
+   justify-content: space-between;
+        /* Распределение элементов с пространством между */
+
 }
 
 
@@ -55,6 +65,9 @@ a {
     flex-grow: 1;
     justify-content: space-between;
     margin-right: 156px;
+    align-items: center;
+    padding: 24px 0 24px;
+    align-items: center;
 }
 
 .header-name {
@@ -74,6 +87,7 @@ a {
         padding: 0;
         margin: 0;
         margin-left: 76px;
+        margin-right: 24px;
 }
 
 .header-menu-link {
@@ -82,6 +96,7 @@ a {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 24px;
 }
 
 .header-menu-link:hover {
@@ -102,7 +117,9 @@ a {
 
 
 .class-address {
-    font-style: normal
+    font-style: normal;
+    display: flex;
+        align-items: center;
 }
 
 .address-ul {
@@ -111,7 +128,9 @@ a {
     gap: 40px;
 }
 
-.address-item {}
+.address-item {
+    margin-right: 24px;
+}
 
 .address-link {
     font-style: normal;
